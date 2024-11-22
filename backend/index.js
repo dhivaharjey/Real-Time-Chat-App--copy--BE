@@ -15,7 +15,7 @@ const app = express();
 const url = process.env.CLIENT_URL;
 app.use(
   cors({
-    origin: url, // Allow only your front-end domain
+    origin: "*", // Allow only your front-end domain
     methods: ["GET", "POST", "PUT", "DELETE"], // Specify allowed methods
     credentials: true, // If you need to handle cookies
   })
